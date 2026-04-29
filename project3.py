@@ -20,7 +20,7 @@ class Game:
 
 # This function checks if the player and enemy are touching
 def check_player_enemy_collision(player_rect, enemy_rect):
-    # colliderect returns True if the two rectangles overlap
+    # colliderect returns True if the player and enemy overlap
     return player_rect.colliderect(enemy_rect)
 
 
