@@ -6,12 +6,15 @@ import pygame
 
 class Game:
     def __init__(self):
+        # The game starts as not over
         self.game_over = False
 
     def player_hit_enemy(self):
+         # If the player touches an enemy, the game ends
         self.game_over = True
 
     def restart(self):
+         # Resets the game so the player can try again
         self.game_over = False
 
 
