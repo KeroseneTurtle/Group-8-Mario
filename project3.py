@@ -17,11 +17,11 @@ class Game:
          # Resets the game so the player can try again
         self.game_over = False
 
-
+# This function checks if the player and enemy are touching
 def check_player_enemy_collision(player_rect, enemy_rect):
     return player_rect.colliderect(enemy_rect)
 
-
+# This function shows a game over message on the screen
 def draw_game_over(screen, font):
     text = font.render("Game Over - Press R to Restart", True, (255, 255, 255))
     screen.blit(text, (120, 250))
